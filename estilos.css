@@ -1,0 +1,753 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display = swap');
+   
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display = swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css');
+
+/* Import Roboto and Roboto-slab from Google Fonts - Short URL (http://srt.lt/b4tY7) */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300');
+
+/* Import Font Awesome - Short URL (http://srt.lt/p2b4) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    *{
+      font-family: ' Arial, Verdana, Tahoma', sans-serif;
+      list-style: none;
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+
+    }
+
+*{margin: 0; padding: 0;}
+/*body{background: #fffffa; position: relative; }*/
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Our base font-size */
+  line-height: 1.75; /* Line height assumes an almost rem value but is dynamic to the font-size */
+  font-weight: 300; /* Use the included weight */
+  color: #332F21; /* Don't use black it's too harsh */
+
+  
+  align-items: center; /* Vertically centre content in the viewport */
+  justify-content: center; /* Horizontally centre content in the viewport */
+
+  min-height: 80vh; /* Force vertical centering since the content won't always be taller than the viewport */
+  padding: 2rem; /* Using rem values as they don't cascade like em units and are not fixed units like pixels */
+
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('teste.jpg'); /*https://source.unsplash.com/random         Várias imagens de fundo, gradiente semitransparente usado como substituto para o Edge*/
+  background-position: center center;
+  background-size: cover;
+}
+
+@supports(background-blend-mode: multiply) { /* Use a blend mode on the background in browser that support it */
+
+  body {
+    background-image: linear-gradient(#4A4A4A, #212121), url('t1.jpg'); /*https://source.unsplash.com/random       Multiple background images, Gradient overlay and the Image */
+    background-blend-mode: multiply; /* Blending the Gradient with the Background Image (can't use black to blend) */
+  }
+
+}
+
+
+
+
+header{width: 100%;}
+header nav{width: 100%; max-width: 1800px;  justify-content: center; box-shadow: 0px 1px  0px rgba(0,0,0,.5); background: #800000; margin: 20px auto; border-radius: 10px;}
+.menu_bar{display:none; }
+ 
+.topo {
+  width: 100%;
+  
+   
+      position: absolute;
+      background-color: rgba(0,0,0,0.0);
+      color:#fff;
+      text-align: ;
+      top: 50px;
+      width: 700px;
+      line-height: 30px;
+      height: 30px;
+}
+
+/*.topo {width: 100%; max-width: 1890px;  height: 100px; box-shadow: 0px 0px  0px rgba(0,0,0,.0); background: #1e90ff; position: absolute;}*/
+.topo  a{text-decoration:none; font-family: ' bandoni mt', sans-serif; color: #000;overflow: hidden; list-style: none; font-size: 24px;}
+.topo img {width: 100%; margin-top:10px; margin:10px; }
+.topo h1 {width: 100%; max-width: 500px;  color: #fff; margin-left:65px; margin-top: -50px; }
+header nav ul{overflow: hidden; list-style: none;}
+header nav ul li{ float: left; }  
+header nav ul li a{ color:#fff; padding: 10px; text-decoration: none; display: block; }
+header nav ul li span{ margin-right: 10px; }
+header nav ul li a:hover{background: #000; color: #fff; border-radius: 10px;}
+
+li:hover ul { display: block; }
+header nav ul li  ul{display: none;}
+header ul li:hover ul { display: block; }
+header nav ul li:hover ul li a:hover{
+text-decoration:underline;
+font-weight: bold;
+background: #000; }
+li ul{
+margin: 0;
+padding: 0;
+list-style: none;
+width: 100%;
+max-width:200px;
+border-radius: 10px;
+border-bottom:1px solid rgba(255,255,255, .3);
+}
+li ul {
+position: absolute;
+background: #800000;
+display: none;
+text-decoration: none; overflow: hidden; list-style: none;
+}
+li  ul li{width: 100%; max-width: 300px; height: 50px; }
+
+ ul li a:hover{ display: block; text-decoration: none; overflow: hidden;}
+
+tr ol {position: absolute; background: #800000; display: none; float: right;
+}
+
+ol li a:hover{ display: block; text-decoration: none; overflow: hidden;}
+
+
+
+section {padding: 20px; box-shadow: 10px 1px  10px rgba(0,0,0,.5); margin-left: 0px; border-radius: 10px;}
+
+
+
+
+@media screen and (max-width: 800px){
+	
+	header nav{
+    width: 100%;
+   height:100%; 
+   left:-100%; 
+    margin: 0;
+     position:absolute;
+      }
+
+	header nav ul li{
+    display: block; 
+     float: none;
+      border-bottom:1px solid rgba(255,255,255, .3);
+       }
+	.menu_bar{
+    display: block; 
+    width: 100%; 
+    background: #4f4f4f;
+  }
+	.menu_bar .bt-menu{
+    display: block;
+    padding: 20px;
+    background: #8999;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    }
+	.menu_bar span{
+    float: right;
+     font-size: 40px;
+   }
+  
+ .azul{display: none;}
+ .topo{display: none;}
+/*section {width: 100%; height: 100%;  max-width: 1000px;  display: block; position: relative; }*/
+/*header.img{width: 100%; max-width: 1000px;  margin: 20px auto; display: block; position: absolute; left: -100%;}*/
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+  font-size: 12px; /* Our base font-size */
+  line-height: 1.75; /* Line height assumes an almost rem value but is dynamic to the font-size */
+  font-weight: 300; /* Use the included weight */
+  color: #332F21; /* Don't use black it's too harsh */
+
+
+}
+
+p{
+    nt-family: 'Roboto', sans-serif;
+    line-height: 20px;
+
+    text-align: justify;
+
+     font-size: 18px;
+
+     width: 100%;
+     max-width: 500px;
+
+ color: #332F21; 
+
+}
+
+h1{
+
+    font-size: 24px;
+
+    color: #003366;
+
+    text-transform: uppercase;
+
+}
+
+h2{
+
+    font-size: 24px;
+
+    padding: 5px;
+
+    background-color: #;
+
+    color: #800000;
+
+}
+
+span{
+
+    font-weight: bold;
+
+    color: #FF0000;
+
+    background-color: #FFFF00;
+
+}
+
+ .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+
+
+
+
+
+
+
+.wrapper{
+  margin-top:10px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 20px auto;
+   box-shadow: 3px 5px 8px 8px #A1A1A1;
+   background: #f6f6f6;
+}
+
+.links{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 3px;
+
+}
+
+.links ul{
+  display: flex;
+  justify-content: center;
+}
+.links ul li{
+ margin: 0 15px;
+ font-weight: 600;
+ text-transform: uppercase;
+ font-style: 20px;
+ letter-spacing: 3px;
+ cursor: pointer;
+}
+.links ul li:hover,
+.links ul li.active{
+  color: #4abd3e;
+}
+.view_item img{
+  width: 75px;
+
+}
+
+.view_main{
+  background: #fff;
+  border-radius:3px;
+  padding: 15px;
+}
+.view_main{
+  background: #fff;
+}
+.list-view .view_item{
+  border: 1px solid #ebecf1;
+  margin: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.list-view .view_item:last-child{
+  margin-bottom: 0;
+}
+
+.list-view .view_item .vi_left{
+  margin-right: 25px;
+}
+
+.view_item .title{
+  font-weight: 600;
+}
+ .view_item .content{
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 200;
+
+ }
+.view_item .btn{
+  width: 125px;
+  background: #4abd3e;
+  color: #fff;
+  padding: 8px 5px;
+  text-align: center;
+  font-weight: 200;
+  cursor: pointer;
+}
+.view_item .btn:hover{
+  background: #3bd62b;
+}
+.grid-view{
+  width: 100%;
+}
+.grid-view .view_item{
+  width: 230px;
+  border: 1px solid #e2efe1;
+  padding: 25px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
+.grid-view .view_item .vi_left{
+  margin-bottom: 10px;
+}
+.grid-view .view_item .btn{
+margin: 0 auto;
+}
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+  
+
+.row { 
+
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #fff;
+  padding: 20px;
+
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.main1 {  
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #8999;
+  color: #fff;
+}
+.footer a{color: #fff;}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.div-slider{
+width: auto;
+
+height: 400px;
+text-align: center;
+}
+.slides-front {
+    padding: 0;
+   width: 100%;
+max-width: 1000px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    position: relative;
+
+}
+
+.slides-front * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides-front input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+   width: 100%;
+max-width: 1890px;
+    height: 500px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out 0.1s;
+
+
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 150px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out 0.1s;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: 375px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4, {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+#crossfade > img { 
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+
+
+
+    animation: imageAnimation 16s linear infinite 0s;
+}
+
+#crossfade > img:nth-child(2)  {
+    animation-delay: 4s; 
+}
+#crossfade > img:nth-child(3) {
+    animation-delay: 8s; 
+}
+#crossfade > img:nth-child(4) {
+    animation-delay: 12s; 
+}
+#crossfade > img:nth-child(5) {
+    animation-delay: 16s; 
+}
+#crossfade > img:nth-child(6) {
+    animation-delay: 20s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+
+
+
+
+
+ .azul{
+            width: 97%;
+            max-width: 1890px;
+            height: 500px;
+     
+
+
+        }
+ .azul img{width: 97%;
+            max-width: 1890px;
+            height: 500px;}
+
+        .img-3{
+            position:absolute;
+            animation-name: primeiro;
+            animation-duration: 5s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay: 5s;
+
+        }
+
+        .img-4{
+            position:absolute;
+
+            opacity: 0;
+
+
+            animation-name: segundo;
+            animation-duration: 5s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay:4s;
+
+        }
+
+
+        .img-5{
+            position:absolute;
+
+            opacity: 0;
+
+
+            animation-name: terceiro;
+            animation-duration: 5s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay:5s;
+
+        }   
+
+            .img-6{
+            position:absolute;
+
+            opacity: 0;
+
+
+            animation-name: quarto;
+            animation-duration: 5s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay:5s;
+
+        }
+
+        /* Original */
+        @keyframes primeiro {
+            100%{
+                opacity: 0;
+            }           
+        }
+
+        @keyframes segundo {
+            100%{
+                opacity: 1;
+            }           
+        }
+
+        @keyframes terceiro {
+            100%{
+                opacity: 1;
+            }           
+        }
+
+        @keyframes quarto {
+            100%{
+                opacity: 1;
+            }           
+        }
+
+
+
+
+.iframe {
+  
+  border: 1px dotted black;
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.iframe::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.iframe {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

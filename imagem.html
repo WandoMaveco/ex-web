@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="title" content="#" />
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="#" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Banner</title>
+
+    <style type="text/css">
+        .azul{
+            width: 200px;
+            height: 250px;
+
+            background-image: url("images/fundo.png");
+
+
+
+        }
+
+
+        .img-3{
+            position:absolute;
+            animation-name: primeiro;
+            animation-duration: 10s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay: 0s;
+
+        }
+
+        .img-4{
+            position:absolute;
+
+            opacity: 0;
+
+
+            animation-name: segundo;
+            animation-duration: 10s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay:4s;
+
+        }
+
+
+        .img-5{
+            position:absolute;
+
+            opacity: 0;
+
+
+            animation-name: terceiro;
+            animation-duration: 10s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay:10s;
+
+        }   
+
+            .img-6{
+            position:absolute;
+
+            opacity: 0;
+
+
+            animation-name: quarto;
+            animation-duration: 10s;
+            animation-iteration-count: 15;
+            animation-direction: alternate;
+            animation-delay:8s;
+
+        }
+
+        /* Original */
+        @keyframes primeiro {
+            100%{
+                opacity: 0;
+            }           
+        }
+
+        @keyframes segundo {
+            100%{
+                opacity: 1;
+            }           
+        }
+
+        @keyframes terceiro {
+            100%{
+                opacity: 1;
+            }           
+        }
+
+        @keyframes quarto {
+            100%{
+                opacity: 1;
+            }           
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="azul">
+        <img src="imagem/1.png" class="img-3" />
+        <img src="imagem/terminal7000.png" class="img-4" />
+        <img src="imagem/GFC2000.jpg" class="img-5" />
+        <img src="imagem/1.png" class="img-6" />
+    </div>
+
+
+</body>
+
+</html>

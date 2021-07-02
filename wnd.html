@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+
+
+
+
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 11%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.row p {width: 100%; color: #000;}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+/* The Modal (background) */
+
+.modal {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 0.1875em;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  /* Full width */
+
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+  color: white;
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border: 0.0625em solid #888;
+  width: 97%;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+
+/* Add Animation */
+
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+/* The Close Button */
+
+.close {
+  color: #F0B823;
+  float: right;
+  font-size: 9vw;
+  font-weight: bold;
+  position: absolute;
+  right: 0.25em;
+  top: -0.25em;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 0.125em 1em;
+  background-color: #171B20;
+  color: #F0B823;
+}
+
+.modal-body {}
+
+.modal-button {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 8px  0;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+ 
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  height: 20px;
+}
+
+.modal-button:hover {
+  background-color: #171B20;
+  color: #F0B823;
+}
+
+.pic {
+  margin: auto;
+  display: block;
+  height: auto;
+  width: 50vh;
+}
+
+.headertext {
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 6.50vw;
+  color: #fff;
+}
+
+.bodytext {
+  font-size: 3.90vw;
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+  padding: 0.625em 0.9375em;
+}
+
+p {
+  display: block;
+  margin: 0;
+
+}
+</style>
+</head>
+<body>
+
+<h2 align="center">FUNCIONÁRIOS DA OIL FIELD CALCULATOR</h2>
+<p></p>
+<br>
+
+
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="i.png" alt="" style="width:100%">
+      <div class="container">
+        <h2>Silvestre Cassa Iombo</h2>
+        <p class="title">CEO & Fundador</p>
+        <p></p>
+        <p>silvestre.iombo@ofc.ao</p>
+        <p>silvestre.iombo.oilfieldcalcul@gmail.com</p>
+         <p><a href="#myModal1" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Silvestre Cassa Iombo</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>926 278 006</p>
+            
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="i.png" alt="" style="width:100%">
+      <div class="container">
+        <h2>Paulo Iombo</h2>
+        <p class="title">Técnico de IT</p>
+        <p></p>
+        <p>Funcionário</p>
+        <p>paulo.iombo@ofc.ao</p>
+        <br>
+        <p><a href="#myModal" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Paulo Iombo</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>927 350 004</p>
+              
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="i1.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Maria Dos Santos</h2>
+        <p class="title">Secretária</p>
+        <p></p>
+        <p>Funcionário</p>
+        <p>maria.santos@ofc.ao</p>
+         <p><a href="#myModal3" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal3" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Maria Dos Santos</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>9923 948 893</p>
+               
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="i.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Benvindo De Carvalho</h2>
+        <p class="title">Técnico de Finanças</p>
+        <p></p>
+        <p>Funcionário</p>
+        <p>benvindo.carvalho@ofc.ao</p>
+         <p><a href="#myModal4" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal4" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Benvindo De Carvalho</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>928 063 614</p>
+               
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="i.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Wando Maveco</h2>
+        <p class="title">Técnico Designer </p>
+        <p></p>
+        <p>Funcionário</p>
+        <p>wando.maveco@ofc.ao</p>
+        <br>
+         <p><a href="#myModal5" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal5" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Wando Maveco</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>945 373 782</p>
+              
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+  
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="i.png" alt="" style="width:100%">
+      <div class="container">
+        <h2>Gaspar Oliveira</h2>
+        <p class="title">Técnico de Eletrótecnia</p>
+        <p></p>
+        <p>Funcionário</p>
+        <p>gaspar.oliveira@ofc.ao</p>
+
+         <p><a href="#myModal6" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal6" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Gaspar Oliveira</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>926 817 529</p>
+                
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="i.png" alt="" style="width:100%">
+      <div class="container">
+        <h2>Telsim Fuca</h2>
+        <p class="title">Técnico de Recursos Humanos</p>
+        <p></p>
+        <p>Funcionário</p>
+        <p>telsim.fuca@ofc.ao</p>
+        <br>
+         <p><a href="#myModal7" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal7" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Jorge Azevedo</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>945 884 725</p>
+                <p>997 939 196</p>
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="i.png" alt="" style="width:100%">
+      <div class="container">
+        <h2>Jorge Azevedo</h2>
+        <p class="title">Técnico de Marketing</p>
+        <p></p>
+        <p>Funcionário</p>
+        <p>jorge.azevedo@ofc.ao</p>
+        <br>
+        <p><a href="#myModal8" class="modal-button" >Contacto</a>
+
+<!-- The Modal -->
+<div id="myModal8" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <div class="headertext">
+                <p>Jorge Azevedo</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bodytext">
+              <p>945 884 725</p>
+                <p>997 939 196</p>
+            </div>
+        </div>
+    </div>
+</div></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  (function() {
+
+  // Get the button that opens the modal
+  // read all the control of any type which has class as modal-button
+  var btn = document.querySelectorAll(".modal-button");
+
+  // All page modals
+  var modals = document.querySelectorAll('.modal');
+
+  // Get the <span> element that closes the modal
+  var spans = document.getElementsByClassName("close");
+
+  // When the user clicks the button, open the modal
+  for (var i = 0; i < btn.length; i++) {
+    btn[i].onclick = function(e) {
+      e.preventDefault();
+      modal = document.querySelector(e.target.getAttribute("href"));
+      modal.style.display = "block";
+      open_modals.push(modal.id);
+    }
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  for (var i = 0; i < spans.length; i++) {
+    spans[i].onclick = function() {
+      for (var index in modals) {
+        if (typeof modals[index].style !== 'undefined' && modals[index].id == open_modals[open_modals.length - 1]) {
+          modals[index].style.display = "none";
+          open_modals.pop();
+        }
+      }
+    }
+}
+})();
+</script>
+
+
+</body>
+</html>
